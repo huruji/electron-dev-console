@@ -1,6 +1,6 @@
 {
 		"name": "electron-dev-console",
-		"version": "1.0.2",
+		"version": "1.0.3",
 		"description": "一个用于在渲染进程查看主进程输出的 electron 开发调试工具",
 		"main": "dist/index.js",
 		"scripts": {
