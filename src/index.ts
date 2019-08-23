@@ -29,7 +29,7 @@ export const main:MainInter = {
   },
 }
 
-export const renderer:{init(w:BrowserWindow):void }= {
+export const renderer:{init():void }= {
   init() {
     const prefix = '%c electron-dev-console'
 
