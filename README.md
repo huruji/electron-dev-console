@@ -4,6 +4,10 @@
 
 ![screenshot](./screenshot.jpg)
 
+**why?**
+
+在开发 electron 应用中，主进程可以通过 `--inspect` 来调试主进程，但是有时候打包过后的应用与开发时表现并不一致，这个时候要调试主进程却只能通过 `electron-log` 之类的日志库通过写日志的方式调试，这似乎有点笨拙，因此有了这个仓库。
+
 ## how to use
 
 ```bash
