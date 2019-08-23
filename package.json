@@ -47,5 +47,8 @@
 		},
 		"peerDependencies": {
 				"electron": "6.x"
-		}
+    },
+    "files": [
+      "dist"
+    ]
 }
