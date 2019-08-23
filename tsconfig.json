@@ -23,9 +23,6 @@
       "es7",
       "dom",
       "dom.iterable"
-    ],
-    "typeRoots": [
-      "node_modules/electron"
     ]
   },
   "include": [

@@ -2,14 +2,14 @@
 		"name": "electron-dev-console",
 		"version": "1.0.0",
 		"description": "一个用于在渲染进程查看主进程输出的 electron 开发调试工具",
-		"main": "index.js",
+		"main": "dist/index.js",
 		"scripts": {
-      "build": "tsc --project .",
-      "dev": "tsc --project . -w",
-      "release:first": "npm run build && standard-version --first-release && git push --follow-tags origin master && npm publish",
-      "release:major": "npm run build && standard-version --release-as major && git push --follow-tags origin master && npm publish",
-      "release:minor": "npm run build && standard-version --release-as minor && git push --follow-tags origin master && npm publish",
-      "release:patch": "npm run build && standard-version --release-as patch && git push --follow-tags origin master && npm publish"
+				"build": "tsc --project .",
+				"dev": "tsc --project . -w",
+				"release:first": "npm run build && standard-version --first-release && git push --follow-tags origin master && npm publish",
+				"release:major": "npm run build && standard-version --release-as major && git push --follow-tags origin master && npm publish",
+				"release:minor": "npm run build && standard-version --release-as minor && git push --follow-tags origin master && npm publish",
+				"release:patch": "npm run build && standard-version --release-as patch && git push --follow-tags origin master && npm publish"
 		},
 		"repository": {
 				"type": "git",
