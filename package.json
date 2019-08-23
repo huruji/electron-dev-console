@@ -1,0 +1,51 @@
+{
+		"name": "electron-dev-console",
+		"version": "1.0.0",
+		"description": "一个用于在渲染进程查看主进程输出的 electron 开发调试工具",
+		"main": "index.js",
+		"scripts": {
+      "build": "tsc --project .",
+      "dev": "tsc --project . -w",
+      "release:first": "npm run build && standard-version --first-release && git push --follow-tags origin master && npm publish",
+      "release:major": "npm run build && standard-version --release-as major && git push --follow-tags origin master && npm publish",
+      "release:minor": "npm run build && standard-version --release-as minor && git push --follow-tags origin master && npm publish",
+      "release:patch": "npm run build && standard-version --release-as patch && git push --follow-tags origin master && npm publish"
+		},
+		"repository": {
+				"type": "git",
+				"url": "git+https://github.com/huruji/electron-dev-console.git"
+		},
+		"keywords": [],
+		"author": "",
+		"license": "ISC",
+		"bugs": {
+				"url": "https://github.com/huruji/electron-dev-console/issues"
+		},
+		"homepage": "https://github.com/huruji/electron-dev-console#readme",
+		"devDependencies": {
+				"@commitlint/cli": "^7.5.2",
+				"@types/node": "^12.6.8",
+				"@types/ws": "^6.0.1",
+				"@typescript-eslint/eslint-plugin": "^1.6.0",
+				"@typescript-eslint/parser": "^1.6.0",
+				"bili": "^4.7.2",
+				"eslint": "^5.16.0",
+				"eslint-config-prettier": "^4.1.0",
+				"eslint-config-standard": "^12.0.0",
+				"eslint-plugin-import": "^2.17.1",
+				"eslint-plugin-node": "^8.0.1",
+				"eslint-plugin-prettier": "^3.0.1",
+				"eslint-plugin-promise": "^4.1.1",
+				"eslint-plugin-standard": "^4.0.0",
+				"husky": "^1.3.1",
+				"lint-staged": "^8.1.5",
+				"microbundle": "^0.11.0",
+				"prettier": "^1.17.0",
+				"rollup-plugin-typescript2": "^0.20.1",
+				"standard-version": "^5.0.2",
+				"typescript": "^3.4.1"
+		},
+		"peerDependencies": {
+				"electron": "6.x"
+		}
+}
